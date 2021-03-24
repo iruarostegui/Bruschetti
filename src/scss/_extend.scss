@@ -1,0 +1,94 @@
+%bigHeader {
+    font-family: Geogrotesque Cyr;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 43px;
+}
+
+%header {
+    font-family: Geogrotesque Cyr;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+%subHeader {
+    font-family: Geogrotesque Cyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+%text {
+    font-family: Geogrotesque Cyr;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+%footer {
+    font-family: Geogrotesque Cyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+// CARDS //
+
+%card {
+    background: #F9F9F9;
+/* Web/Buttom/Shadow */
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+%cardImg {
+    border-radius: 4px 4px 0px 0px;
+}
+
+
+// Vectores background //
+
+%vectorIzqServicios {
+    position: absolute;
+    left: 23.18%;
+    right: 11.33%;
+    top: 154.19%;
+    bottom: -182.59%;
+    background: linear-gradient(69.72deg, #12497F 29.41%, #16477A 34.29%, #1D416D 42.1%, #203757 51.85%, #1D273B 63.19%, #0C0D17 74.96%);
+    opacity: 0.4;
+    transform: rotate(-178.65deg);
+}
+
+%vectorDerServicios {
+    position: absolute;
+    left: 109.69%;
+    right: -67.66%;
+    top: 4.72%;
+    bottom: -18.36%;
+    background: linear-gradient(69.72deg, #12497F 29.41%, #16477A 34.29%, #1D416D 42.1%, #203757 51.85%, #1D273B 63.19%, #0C0D17 74.96%);
+    opacity: 0.4;
+    transform: rotate(57.36deg);
+}
+
+
+
+//CTA Home
+
+%ctaHome {
+    background-color: $colorPrincipal;
+    border: none;
+    color: $white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
