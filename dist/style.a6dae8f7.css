@@ -38,7 +38,7 @@ html, body {
   line-height: 43px;
 }
 
-.seguros-body .seguros .seguros__title, .contacto .contacto__title, .servicios .servicios__title {
+.seguros .seguros__title, .contacto .contacto__title, .servicios .servicios__title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 500;
@@ -46,7 +46,7 @@ html, body {
   line-height: 41px;
 }
 
-.seguros-body .seguros .seguros__container .seguros-cta h1, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
+.seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -54,7 +54,7 @@ html, body {
   line-height: 31px;
 }
 
-.seguros-body .seguros .seguros__container .seguros__text h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
+.contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 300;
@@ -62,7 +62,7 @@ html, body {
   line-height: 25px;
 }
 
-.seguros-body .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.seguros .seguros__container .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -74,7 +74,7 @@ html, body {
   border-radius: 4px 4px 0px 0px;
 }
 
-.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.seguros .seguros__container .seguros__cta, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   background-color: #1E71B9;
   border: none;
   color: #F9F9F9;
@@ -875,56 +875,47 @@ footer .footer__container .footer__redes a img {
     border-radius: 5px;
   }
 }
-.seguros-body {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+.seguros {
+  position: relative;
+  top: 5vh;
   width: 100vw;
   height: 100vh;
-  background-color: #464646;
+  background: rgba(255, 0, 0, 0.7);
 }
-.seguros-body .seguros {
-  position: absolute;
-  top: 20vh;
-  left: 10vw;
-  width: 50vw;
-  height: 30vh;
-  min-width: 250px;
-  max-width: 350px;
-  background: rgba(245, 245, 245, 0.7);
-  padding: 1%;
-  border-radius: 4px;
-}
-.seguros-body .seguros .seguros__title {
+.seguros .seguros__title {
+  text-transform: uppercase;
+  position: relative;
+  height: 41px;
+  width: 100%;
+  top: 10%;
+  left: 10%;
   white-space: nowrap;
 }
-.seguros-body .seguros .seguros__container {
-  position: absolute;
-  top: 6vh;
-}
-.seguros-body .seguros .seguros__container .seguros__text p {
+.seguros .seguros__container {
   position: relative;
-  right: 5%;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 85vh;
+}
+.seguros .seguros__container .seguros__text {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 50%;
+}
+.seguros .seguros__container .seguros__text p {
+  position: relative;
   top: 3vh;
-  text-align: right;
+  left: 0;
 }
-.seguros-body .seguros .seguros__container .seguros-cta {
-  background: rgba(30, 113, 185, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 4px;
-  box-shadow: 0 0 0 2pt #1E71B9;
-  width: 170px;
-  height: 40px;
-  position: absolute;
-  top: 23vh;
-  right: 5%;
-}
-.seguros-body .seguros .seguros__container .seguros-cta h1 {
+.seguros .seguros__container .seguros__cta {
   position: relative;
-  top: 15%;
-  left: 3%;
-  text-transform: uppercase;
+  top: 35%;
+}
+
+.footer__seguros {
+  top: 0;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
