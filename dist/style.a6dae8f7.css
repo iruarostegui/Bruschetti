@@ -38,7 +38,7 @@ html, body {
   line-height: 43px;
 }
 
-.seguros-body .seguros-section h1, .contacto .contacto__title, .servicios .servicios__title {
+.seguros-body .seguros .seguros__title, .contacto .contacto__title, .servicios .servicios__title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 500;
@@ -46,7 +46,7 @@ html, body {
   line-height: 41px;
 }
 
-.seguros-body .seguros-section .seguros-cta h1, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
+.seguros-body .seguros .seguros__container .seguros-cta h1, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -54,7 +54,7 @@ html, body {
   line-height: 31px;
 }
 
-.seguros-body .seguros-section .seguros-intro h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
+.seguros-body .seguros .seguros__container .seguros__text h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 300;
@@ -62,7 +62,7 @@ html, body {
   line-height: 25px;
 }
 
-.seguros-body .seguros-section .seguros-intro p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.seguros-body .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -884,7 +884,7 @@ footer .footer__container .footer__redes a img {
   height: 100vh;
   background-color: #464646;
 }
-.seguros-body .seguros-section {
+.seguros-body .seguros {
   position: absolute;
   top: 20vh;
   left: 10vw;
@@ -896,20 +896,20 @@ footer .footer__container .footer__redes a img {
   padding: 1%;
   border-radius: 4px;
 }
-.seguros-body .seguros-section h1 {
+.seguros-body .seguros .seguros__title {
   white-space: nowrap;
 }
-.seguros-body .seguros-section .seguros-intro {
+.seguros-body .seguros .seguros__container {
   position: absolute;
   top: 6vh;
 }
-.seguros-body .seguros-section .seguros-intro p {
+.seguros-body .seguros .seguros__container .seguros__text p {
   position: relative;
   right: 5%;
   top: 3vh;
   text-align: right;
 }
-.seguros-body .seguros-section .seguros-cta {
+.seguros-body .seguros .seguros__container .seguros-cta {
   background: rgba(30, 113, 185, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 4px;
@@ -920,7 +920,7 @@ footer .footer__container .footer__redes a img {
   top: 23vh;
   right: 5%;
 }
-.seguros-body .seguros-section .seguros-cta h1 {
+.seguros-body .seguros .seguros__container .seguros-cta h1 {
   position: relative;
   top: 15%;
   left: 3%;

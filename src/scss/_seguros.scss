@@ -45,7 +45,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #464646;
-    .seguros-section {
+    .seguros {
         position: absolute;
         top: 20vh;
         left: 10vw;
@@ -56,13 +56,14 @@
         background: rgba(245, 245, 245, 0.7);
         padding: 1%;
         border-radius: 4px;
-        h1 {
+        .seguros__title {
             @extend %header;
             white-space: nowrap;
         }
-        .seguros-intro {
+        .seguros__container {
             position: absolute;
             top: 6vh;
+            .seguros__text {
             h3 {
                 @extend %text;
             }
@@ -74,22 +75,23 @@
                 text-align: right;
             }
         }
-        .seguros-cta {
-            background: rgba(30, 113, 185, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 4px;
-            box-shadow: 0 0 0 2pt #1E71B9;
-            width: 170px;
-            height: 40px;
-            position: absolute;
-            top: 23vh;
-            right: 5%;
-            h1 {
-                position: relative;
-                top: 15%;
-                left: 3%;
-                @extend %subHeader;
-                text-transform: uppercase;
+            .seguros-cta {
+                background: rgba(30, 113, 185, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 4px;
+                box-shadow: 0 0 0 2pt #1E71B9;
+                width: 170px;
+                height: 40px;
+                position: absolute;
+                top: 23vh;
+                right: 5%;
+                h1 {
+                    position: relative;
+                    top: 15%;
+                    left: 3%;
+                    @extend %subHeader;
+                    text-transform: uppercase;
+                }
             }
         }
     }
