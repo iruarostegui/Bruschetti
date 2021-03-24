@@ -565,7 +565,7 @@ footer {
             width: 50%;
             form {
                 input {
-                    margin-bottom: 5%;
+                    margin-bottom: 2%;
                 }
             }
         }
@@ -699,6 +699,23 @@ footer {
         }
     }
 
+    footer {
+        height: 40vh;
+        .footer__container {
+            padding-top: 2%;
+            .footer__logo {
+                img {
+                    width: 50%;
+                }
+            }
+            .footer__redes {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1550px) {
     .contacto {
         height: 60vh;
 
@@ -770,21 +787,6 @@ footer {
                 left: 49%;
                 z-index: -1;
                 border-radius: 5px;
-            }
-        }
-    }
-
-    footer {
-        height: 40vh;
-        .footer__container {
-            padding-top: 2%;
-            .footer__logo {
-                img {
-                    width: 50%;
-                }
-            }
-            .footer__redes {
-                width: 60%;
             }
         }
     }
