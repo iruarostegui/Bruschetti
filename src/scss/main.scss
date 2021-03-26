@@ -324,6 +324,10 @@
                 }
                 textarea {
                     padding: 3%;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    height: 30%;
                 }
                 input {
                     margin-bottom: 2%;

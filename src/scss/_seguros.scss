@@ -1,54 +1,53 @@
-// #body-auto {
-//     background-image: url(../img/Seguro/celular/auto.jpg);
-// }
-// #body-motos {
-//     background-image: url(../img/Seguro/celular/moto.jpg);
-// }
+#body-auto {
+    background-image: url(../img/servicios/svg/auto.svg);
+}
+#body-motos {
+    background-image: url(../img/servicios/svg/moto.svg);
+}
 
-// #body-bici {
-//     background-image: url(../img/Seguro/celular/bici.jpg);
-// }
+#body-bici {
+    background-image: url(../img/servicios/svg/bici.svg);
+}
 
-// #body-civil {
-//     background-image: url(../img/Seguro/celular/responsabilidad-civil.jpg);
-// }
+#body-civil {
+    background-image: url(../img/servicios/svg/responsabilidad-civil.svg);
+}
 
-// #body-caucion {
-//     background-image: url(../img/Seguro/celular/caucion.jpg);
-// }
+#body-caucion {
+    background-image: url(../img/servicios/svg/caucion.svg);
+}
 
-// #body-personales {
-//     background-image: url(../img/Seguro/celular/accidente-personales.jpg);
-// }
+#body-personales {
+    background-image: url(../img/servicios/svg/accidentes-personales.svg);
+}
 
-// #body-vida {
-//     background-image: url(../img/Seguro/celular/vida.jpg);
-// }
+#body-vida {
+    background-image: url(../img/servicios/svg/vida.svg);
+}
 
-// #body-salud {
-// background-image: url(../img/Seguro/celular/salud.jpg);
-// }
+#body-salud {
+background-image: url(../img/servicios/svg/salud.svg);
+}
 
-// #body-hogar {
-//     background-image: url(../img/Seguro/celular/hogar.jpg);
-// }
+#body-hogar {
+    background-image: url(../img/servicios/svg/hogar.svg);
+}
 
-// #body-comercio {
-//     background-image: url(../img/Seguro/celular/industria.jpg);
-// }
+#body-comercio {
+    background-image: url(../img/servicios/svg/comercio-industria.svg);
+}
 
     .seguros {
         position: relative;
         top: 5vh;
         width: 100vw;
         height: 100vh;
-        background: rgba(255, 0, 0, 0.7);
         .seguros__title {
             @extend %header;
             text-transform: uppercase;
             position: relative;
             height: 41px;
-            width: 100%;
+            width: 50%;
             top: 10%;
             left: 10%;
             white-space: nowrap;
@@ -63,7 +62,7 @@
                 position: absolute;
                 top: 10%;
                 left: 0;
-                width: 50%;
+                width: 20%;
             h3 {
                 @extend %subHeader;
             }
@@ -87,95 +86,15 @@
         top: 0;
     }
 
-// @media only screen and (min-width: 530px) {
-//     #body-auto {
-//         background-image: url(../img/Seguro/Tablet/auto.jpg);
-//     }
-//     #body-motos {
-//         background-image: url(../img/Seguro/Tablet/moto.jpg);
-//     }
-    
-//     #body-bici {
-//         background-image: url(../img/Seguro/Tablet/bici.jpg);
-//     }
-    
-//     #body-civil {
-//         background-image: url(../img/Seguro/Tablet/responsabilidad-civil.jpg);
-//     }
-    
-//     #body-caucion {
-//         background-image: url(../img/Seguro/Tablet/caucion.jpg);
-//     }
-    
-//     #body-personales {
-//         background-image: url(../img/Seguro/Tablet/accidentes-personales.jpg);
-//     }
-    
-//     #body-vida {
-//         background-image: url(../img/Seguro/Tablet/vida.jpg);
-//     }
-    
-//     #body-salud {
-//     background-image: url(../img/Seguro/Tablet/salud.jpg);
-//     }
-    
-//     #body-hogar {
-//         background-image: url(../img/Seguro/Tablet/hogar.jpg);
-//     }
-    
-//     #body-comercio {
-//         background-image: url(../img/Seguro/Tablet/industria.jpg);
-//     }
-// }
-
-// @media only screen and (min-width: 950px) {
-//     #body-auto {
-//         background-image: url(../img/Seguro/auto.jpg);
-//     }
-//     #body-motos {
-//         background-image: url(../img/Seguro/moto.jpg);
-//     }
-    
-//     #body-bici {
-//         background-image: url(../img/Seguro/bici.jpg);
-//     }
-    
-//     #body-civil {
-//         background-image: url(../img/Seguro/responsabilidad-civil.jpg);
-//     }
-    
-//     #body-caucion {
-//         background-image: url(../img/Seguro/caucion.jpg);
-//     }
-    
-//     #body-personales {
-//         background-image: url(../img/Seguro/accidentes-personales.jpg);
-//     }
-    
-//     #body-vida {
-//         background-image: url(../img/Seguro/vida.jpg);
-//     }
-    
-//     #body-salud {
-//     background-image: url(../img/Seguro/salud.jpg);
-//     }
-    
-//     #body-hogar {
-//         background-image: url(../img/Seguro/hogar.jpg);
-//     }
-    
-//     #body-comercio {
-//         background-image: url(../img/Seguro/industria.jpg);
-//     }
-//     .seguros-body {
-//         background-repeat: no-repeat;
-//         background-position: center center;
-//         background-attachment: fixed;
-//         background-size: cover;
-//         height: auto;
-//         background-color: #464646;
-//         .seguros-section {
-//             left: 13.5vw;
-//         }
-//     }
-// }
+    .seguros-body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: 40%;
+        position: absolute;
+        top: 6vh;
+        background-color: $white;
+        .seguros-section {
+        left: 13.5vw;
+        }
+    }
