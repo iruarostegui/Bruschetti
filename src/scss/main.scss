@@ -137,6 +137,9 @@
             @extend %subHeader;
             padding-top: 5%;
             }
+            .carousel__text--detail {
+                @extend %subHeader;
+            }
         }
 
         .carousel__image {
@@ -152,6 +155,39 @@
 
     .is-hidden {
     display: none;
+    }
+}
+.background {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    justify-self: center;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.background--servicios {
+    top: 105vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    img {
+        width: auto;
+        height: 100%;
+        transform: translateX(-80%);
+    }
+}
+
+.background--contacto {
+    top: 200vh;
+    width: 100vw;
+    height: 100vh;
+    right: -10vw;
+    img {
+        width: auto;
+        height: 100%;
+        transform: translateX(30%);
     }
 }
 
@@ -189,12 +225,6 @@
             height: 100%;
             min-height: 35px;
             width: 100%;
-            background-size: contain;
-            position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-origin: content-box;
-            padding: 1%;
             display: grid;
             grid-template-columns: 1fr 3fr;
             grid-template-rows: 1fr;
@@ -526,48 +556,39 @@ footer {
         }
 
         .servicios__card {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:    "img"
-                                    "text";
-
-            .card__img {
-                grid-area: img;
-                display: flex;
-                height: 100%;
-                img { 
-                    display: none;
-                    position: relative;
-                    z-index: 0;
-                    top: 5px;
-                    width: 25vw;
-                    min-width: 220px;
-                    height: auto;
-                    max-height: 80px;
-                    object-fit: fill;
-                }
-            }
+            display: flex;
+            padding: 20%;
+            background-size: contain;
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-origin: content-box;
 
             .card__icon {
                 display: none;
             }
 
             .card__text {
-                grid-area: text;
-                width: 28vw;
-                min-height: 200px;
-                height: 3vh;
+                width: 100%;
+                height: 100%;
+                padding: 5%;
                 white-space: pre-wrap;
-                position: relative;
-                top: -3vh;
-                padding-left: 1vw;
+                position: absolute;
+                bottom: 0;
+                
+                h4 {
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    justify-content: start;
+                    align-content: flex-start;
+                }
                 h6 {
                     display: flex;
-                    width: 27vw;
+                    width: 90%;
                     font-size: 14px;
-                    padding-left: 0.5vw;
-                    position: relative;
-                    top: -3.5vh;
+                    position: absolute;
+                    bottom: 5px;
                 }
             }
         }
@@ -578,6 +599,12 @@ footer {
             box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
         }
     }
+    }
+
+    .background--contacto {
+        img {
+            transform: translateX(50%);
+        }
     }
 
     .contacto {
@@ -692,6 +719,12 @@ footer {
         }
     }
 
+    .background--contacto {
+        img {
+            transform: translateX(120%);
+        }
+    }
+
     .servicios {
         height: 100vh;
         width: 80vw;
@@ -715,26 +748,6 @@ footer {
             grid-template-areas:    ". . card1 card2"
                                     "card3 card4 card5 card6"
                                     "card7 card8 card9 card0";
-
-            .servicios__card {
-            .card__img {
-            img {
-                height: 13vh;
-                width: 16.6vw;
-                max-height: 110px;
-                max-width: 310px;
-            }
-            }
-
-            .card__text {
-                padding-left: 1vw;
-                width: 16.6vw;
-                white-space: pre-wrap;
-            h6 {
-                width: 15vw;
-            }
-            }
-            }
         }
     }
 
