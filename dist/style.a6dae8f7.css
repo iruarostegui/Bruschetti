@@ -461,6 +461,13 @@ html, body {
   border-radius: 5px;
   backdrop-filter: blur(2px);
 }
+.contacto .contacto__container .contacto__left form {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 .contacto .contacto__container .contacto__left form label {
   display: block;
   color: grey;
