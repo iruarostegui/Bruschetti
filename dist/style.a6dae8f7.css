@@ -62,7 +62,7 @@ html, body {
   line-height: 25px;
 }
 
-.seguros .seguros__container .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.seguros .seguros__container .seguros__text .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -74,7 +74,7 @@ html, body {
   border-radius: 4px 4px 0px 0px;
 }
 
-.seguros .seguros__container .seguros__cta, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.seguros .seguros__container .seguros__text .seguros__cta, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   background-color: #1E71B9;
   border: none;
   color: #F9F9F9;
@@ -968,11 +968,10 @@ footer .footer__container .footer__redes a img {
 .seguros .seguros__title {
   text-transform: uppercase;
   position: relative;
-  height: 41px;
-  width: 50%;
-  top: 10%;
+  height: auto;
+  width: 80%;
   left: 10%;
-  white-space: nowrap;
+  white-space: normal;
 }
 .seguros .seguros__container {
   position: relative;
@@ -983,18 +982,18 @@ footer .footer__container .footer__redes a img {
 }
 .seguros .seguros__container .seguros__text {
   position: absolute;
-  top: 10%;
   left: 0;
-  width: 20%;
+  width: 80%;
 }
 .seguros .seguros__container .seguros__text p {
   position: relative;
-  top: 3vh;
+  padding: 20% 0% 20% 0%;
   left: 0;
+  height: auto;
 }
-.seguros .seguros__container .seguros__cta {
+.seguros .seguros__container .seguros__text .seguros__cta {
   position: relative;
-  top: 35%;
+  top: 20%;
 }
 
 .footer__seguros {
@@ -1012,6 +1011,12 @@ footer .footer__container .footer__redes a img {
 }
 .seguros-body .seguros-section {
   left: 13.5vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .seguros .seguros__container .seguros__text p {
+    padding: 5% 0% 5% 0%;
+  }
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

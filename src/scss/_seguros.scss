@@ -46,11 +46,10 @@ background-image: url(../img/servicios/svg/salud.svg);
             @extend %header;
             text-transform: uppercase;
             position: relative;
-            height: 41px;
-            width: 50%;
-            top: 10%;
+            height: auto;
+            width: 80%;
             left: 10%;
-            white-space: nowrap;
+            white-space: normal;
         }
         .seguros__container {
             position: relative;
@@ -60,24 +59,24 @@ background-image: url(../img/servicios/svg/salud.svg);
             height: 85vh;
             .seguros__text {
                 position: absolute;
-                top: 10%;
                 left: 0;
-                width: 20%;
-            h3 {
-                @extend %subHeader;
-            }
-            p {
-                position: relative;
-                top: 3vh;
-                left: 0;
-                @extend %footer;
-            }
-        }
-            .seguros__cta {
-                position: relative;
-                top: 35%;
-                @extend %footer;
-                @extend %ctaHome;
+                width: 80%;
+                h3 {
+                    @extend %subHeader;
+                }
+                p {
+                    position: relative;
+                    padding: 20% 0% 20% 0%;
+                    left: 0;
+                    height: auto;
+                    @extend %footer;
+                }
+                .seguros__cta {
+                    position: relative;
+                    top: 20%;
+                    @extend %footer;
+                    @extend %ctaHome;
+                }
             }
         }
     }
@@ -98,3 +97,15 @@ background-image: url(../img/servicios/svg/salud.svg);
         left: 13.5vw;
         }
     }
+
+@media only screen and (min-width: 768px) {
+    .seguros {
+        .seguros__container {
+            .seguros__text {
+                p {
+                    padding: 5% 0% 5% 0%;
+                }
+            }
+        }
+    }
+}
