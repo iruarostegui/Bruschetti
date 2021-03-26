@@ -46,7 +46,7 @@ html, body {
   line-height: 41px;
 }
 
-.seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
+.homeoffice .homeoffice__title h1, .seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -54,7 +54,7 @@ html, body {
   line-height: 31px;
 }
 
-.contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__card h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 300;
@@ -1017,6 +1017,50 @@ footer .footer__container .footer__redes a img {
   .seguros .seguros__container .seguros__text p {
     padding: 5% 0% 5% 0%;
   }
+}
+.homeoffice {
+  width: 100vw;
+  height: auto;
+}
+.homeoffice .homeoffice__title {
+  display: inline;
+}
+.homeoffice .homeoffice__title img {
+  width: 50%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__card img {
+  width: 50%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__muerte {
+  position: absolute;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__medico {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__subsidio {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__asistencia {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__indemnizacion {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__tecnico {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__videollamada {
+  top: 10%;
+  left: 10%;
+}
+.homeoffice .homeoffice__beneficios .homeoffice__beneficios__psicologia {
+  top: 10%;
+  left: 10%;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

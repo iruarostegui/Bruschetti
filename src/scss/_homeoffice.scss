@@ -1,0 +1,54 @@
+.homeoffice {
+    width: 100vw;
+    height: auto;
+    .homeoffice__title {
+        display: inline;
+        img {
+            width: 50%;
+        }
+        h1 {
+            @extend %subHeader;
+        }
+    }
+    .homeoffice__beneficios {
+        .homeoffice__beneficios__card {
+            img {
+                width: 50%;
+            }
+            h3 {
+                @extend %text;
+            }
+        }
+        .homeoffice__beneficios__muerte {
+            position: absolute;
+        }
+        .homeoffice__beneficios__medico {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__subsidio {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__asistencia {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__indemnizacion {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__tecnico {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__videollamada {
+            top: 10%;
+            left: 10%;
+        }
+        .homeoffice__beneficios__psicologia {
+            top: 10%;
+            left: 10%;
+        }
+    }
+}
