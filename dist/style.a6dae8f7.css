@@ -30,7 +30,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--title {
+.homeoffice .homeoffice__container .homeoffice__title h1, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 600;
@@ -38,7 +38,7 @@ html, body {
   line-height: 43px;
 }
 
-.homeoffice .homeoffice__container .homeoffice__title h1, .seguros .seguros__title, .contacto .contacto__title, .servicios .servicios__title {
+.seguros .seguros__title, .contacto .contacto__title, .servicios .servicios__title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 500;
@@ -46,7 +46,7 @@ html, body {
   line-height: 41px;
 }
 
-.seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .title, .seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -54,7 +54,7 @@ html, body {
   line-height: 31px;
 }
 
-.homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .navbar .navbar__container .navbar__options li a {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container, .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .navbar .navbar__container .navbar__options li a {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 300;
@@ -1024,13 +1024,15 @@ footer .footer__container .footer__redes a img {
   top: 0vh;
   background-image: url(/background.65a1f2e6.svg);
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: 100%;
+  background-position-y: 5%;
 }
 .homeoffice .homeoffice__container {
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   top: 10vh;
 }
 .homeoffice .homeoffice__container .homeoffice__title {
@@ -1077,183 +1079,90 @@ footer .footer__container .footer__redes a img {
   width: 40px;
 }
 .homeoffice .tabla {
-  z-index: 1;
-  width: 80vw;
+  z-index: 0;
+  width: 90%;
   height: auto;
-  position: absolute;
-  top: 100vh;
-  left: 10vw;
+  position: relative;
+  top: 5vh;
+  left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-.homeoffice .tabla #plans, .homeoffice .tabla #plans ul, .homeoffice .tabla #plans ul li {
+.homeoffice .tabla .tabla__section .tabla__planes {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.homeoffice .tabla #pricePlans:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.homeoffice .tabla #pricePlans {
-  zoom: 1;
-}
-.homeoffice .tabla #pricePlans {
-  max-width: 69em;
-  margin: 0 auto;
-}
-.homeoffice .tabla #pricePlans #plans .plan {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad {
   background: #fff;
   float: left;
   width: 100%;
   text-align: center;
   border-radius: 5px;
   margin: 0 0 20px 0;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-.homeoffice .tabla .planContainer .title h2 {
-  font-size: 2.125em;
-  font-weight: 300;
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container {
+  color: #3e4f6a;
+  margin: 0;
+}
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .title {
+  position: relative;
+  top: 0;
   color: #3e4f6a;
   margin: 0;
   padding: 0.6em 0;
-}
-.homeoffice .tabla .planContainer .title h2.bestPlanTitle {
   background: #F9F9F9;
-  background: -webkit-linear-gradient(top, #475975, #364761);
-  background: -moz-linear-gradient(top, #475975, #364761);
-  background: -o-linear-gradient(top, #475975, #364761);
-  background: -ms-linear-gradient(top, #475975, #364761);
-  background: linear-gradient(top, #475975, #364761);
+  background: #1E71B9;
   color: #fff;
   border-radius: 5px 5px 0 0;
 }
-.homeoffice .tabla .planContainer .price p {
-  background: #3e4f6a;
-  background: -webkit-linear-gradient(top, #475975, #364761);
-  background: -moz-linear-gradient(top, #475975, #364761);
-  background: -o-linear-gradient(top, #475975, #364761);
-  background: -ms-linear-gradient(top, #475975, #364761);
-  background: linear-gradient(top, #475975, #364761);
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 700;
-  height: 2.6em;
-  line-height: 2.6em;
-  margin: 0 0 1em;
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad li .options {
+  margin-top: 5%;
 }
-.homeoffice .tabla .planContainer .price p.bestPlanPrice {
-  background: #f7814d;
-}
-.homeoffice .tabla .planContainer .price p span {
-  color: #8394ae;
-}
-.homeoffice .tabla .planContainer .options {
-  margin-top: 10em;
-}
-.homeoffice .tabla .planContainer .options li {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad li .options li {
   font-weight: 700;
   color: #364762;
   line-height: 2.5;
 }
-.homeoffice .tabla .planContainer .options li span {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad li .options li span {
   font-weight: 400;
   color: #979797;
 }
-.homeoffice .tabla .planContainer .button a {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .button a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #3e4f6a;
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 2.8em;
-  border: 2px solid #3e4f6a;
   display: inline-block;
   width: 80%;
   height: 2.8em;
   border-radius: 4px;
   margin: 1.5em 0 1.8em;
-}
-.homeoffice .tabla .planContainer .button a.bestPlanButton {
   color: #fff;
-  background: #f7814d;
-  border: 2px solid #f7814d;
-}
-.homeoffice .tabla #credits {
-  text-align: center;
-  font-size: 0.8em;
-  font-style: italic;
-  color: #777;
-}
-.homeoffice .tabla #credits a {
-  color: #333;
-}
-.homeoffice .tabla #credits a:hover {
-  text-decoration: none;
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .homeoffice .tabla #pricePlans #plans .plan {
-    width: 49%;
-    margin: 0 2% 20px 0;
-  }
-  .homeoffice .tabla #pricePlans #plans > li:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .homeoffice .tabla #pricePlans #plans .plan {
-    width: 49%;
-    margin: 0 2% 20px 0;
-  }
-  .homeoffice .tabla #pricePlans #plans > li:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .homeoffice .tabla #pricePlans {
-    margin: 2em auto;
-  }
-  .homeoffice .tabla #pricePlans #plans .plan {
-    width: 24%;
-    margin: 0 1.33% 20px 0;
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-  }
-  .homeoffice .tabla #pricePlans #plans > li:last-child {
-    margin-right: 0;
-  }
-  .homeoffice .tabla #pricePlans #plans .plan:hover {
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04);
-  }
-  .homeoffice .tabla .planContainer .button a {
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -ms-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-  }
-  .homeoffice .tabla .planContainer .button a:hover {
-    background: #3e4f6a;
-    color: #fff;
-  }
-  .homeoffice .tabla .planContainer .button a.bestPlanButton:hover {
-    background: #ff9c70;
-    border: 2px solid #ff9c70;
-  }
+  background: linear-gradient(135.2deg, #12497F 29.35%, #125C90 39.1%, #1291C9 60.68%, #079EDA 64.87%);
+  border: 2px solid #F9F9F9;
 }
 .homeoffice .homeoffice__footer {
+  position: relative;
+  top: 5vh;
+}
+.homeoffice .homeoffice__footer .footer__container {
   position: absolute;
-  top: 320vh;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad {
+    width: 45%;
+    margin: 0 2% 20px 0;
+  }
+  .homeoffice .tabla__section .tabla__planes > li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .homeoffice .homeoffice__container .homeoffice__title h1 {
     left: 17%;
     top: 3vh;
@@ -1267,29 +1176,83 @@ footer .footer__container .footer__redes a img {
     line-height: 30px;
   }
   .homeoffice .tabla {
-    top: 120vh;
+    top: 15vh;
+  }
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad {
+    width: 45%;
+    margin: 0 2% 20px 0;
+  }
+  .homeoffice .tabla__section .tabla__planes > li:nth-child(2n) {
+    margin-right: 0;
   }
   .homeoffice .homeoffice__footer {
-    top: 210vh;
+    top: 20vh;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1025px) {
   .homeoffice .homeoffice__container {
     background-size: 35%;
     overflow: visible;
   }
+  .homeoffice .homeoffice__container .homeoffice__title h1 {
+    top: 2.5vh;
+    left: 13%;
+  }
   .homeoffice .homeoffice__container .homeoffice__beneficios {
     width: 70vw;
+    height: auto;
+    top: 5%;
     left: 15vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10%;
+  }
+  .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-template-areas: "img" "titulo";
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    height: 180px;
+  }
+  .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card img {
+    width: 120px;
+    justify-self: center;
+    align-self: center;
+  }
+  .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card h3 {
+    width: 200px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
   }
   .homeoffice .tabla {
-    top: 100vh;
+    top: 5vh;
+  }
+  .homeoffice .tabla .tabla__section {
+    margin: 2em auto;
+  }
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad {
+    width: 23%;
+    margin: 0 1.33% 20px 0;
+    transition: all 0.25s;
+  }
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .button a {
+    transition: all 0.25s;
+  }
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .button a:hover {
+    background: linear-gradient(69.72deg, #12497F 29.41%, #16477A 34.29%, #1D416D 42.1%, #203757 51.85%, #1D273B 63.19%, #0C0D17 74.96%);
+    color: #fff;
+  }
+  .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad:hover {
+    transform: scale(1.04);
+  }
+  .homeoffice .tabla__section .tabla__planes > li:last-child {
+    margin-right: 0;
   }
   .homeoffice .homeoffice__footer {
-    top: 150vh;
+    top: 15vh;
   }
 }
 
