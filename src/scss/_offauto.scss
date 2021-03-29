@@ -1,0 +1,33 @@
+.offauto {
+    width: 100vw;
+    height: 100vh;
+    .offauto__container {
+        .offauto__title {
+            h1 {
+                @extend %bigHeader;
+            }
+        }
+        .offauto__text {
+            p {
+                @extend %text;
+            }
+        }
+        .offauto__cta {
+            h1 {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 700;
+                letter-spacing: 3px;
+                line-height: 2.8em;
+                display: inline-block;
+                width: 80%;
+                height: 2.8em;
+                border-radius: 4px;
+                margin: 1.5em 0 1.8em;
+                color: #fff;
+                background: $lightGradient;
+                border: 2px solid $white;
+            }
+        }
+    }
+}
