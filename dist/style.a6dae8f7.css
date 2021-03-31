@@ -1001,7 +1001,7 @@ footer .footer__container .footer__redes a img {
 .seguros .seguros__container .seguros__text {
   position: absolute;
   left: 0;
-  width: 80%;
+  width: 50%;
 }
 .seguros .seguros__container .seguros__text p {
   position: relative;
