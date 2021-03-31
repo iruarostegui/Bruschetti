@@ -320,6 +320,18 @@
         }
         .homeoffice__footer {
             top: 25vh;
+            height: 50vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 1919px) {
+    .homeoffice {
+        .tabla {
+            top: 15vh;
+        }
+        .homeoffice__footer {
+            height: 35vh;
         }
     }
 }

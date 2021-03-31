@@ -1250,7 +1250,7 @@ footer .footer__container .footer__redes a img {
     align-self: center;
   }
   .homeoffice .tabla {
-    top: 10vh;
+    top: 25vh;
   }
   .homeoffice .tabla .tabla__section {
     margin: 2em auto;
@@ -1274,7 +1274,13 @@ footer .footer__container .footer__redes a img {
     margin-right: 0;
   }
   .homeoffice .homeoffice__footer {
-    top: 15vh;
+    top: 25vh;
+    height: 50vh;
+  }
+}
+@media only screen and (min-width: 1919px) {
+  .homeoffice .homeoffice__footer {
+    height: 35vh;
   }
 }
 .offauto {
