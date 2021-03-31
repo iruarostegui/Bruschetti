@@ -27,9 +27,13 @@ html, body {
   height: auto !important;
   max-width: 100vw;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
+@media only screen and (min-width: 768px) {
+  html, body {
+    scroll-behavior: smooth;
+  }
+}
 .offauto .offauto__container .offauto__title h1, .homeoffice .homeoffice__container .homeoffice__title h1, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
