@@ -990,6 +990,18 @@ footer .footer__container .footer__redes a img {
   background-image: url(/comercio-industria.910da8be.svg);
 }
 
+#body-prepagas {
+  background-image: url(/salud.f549f39b.svg);
+}
+
+#body-consorcio {
+  background-image: url(/consorcio.d33044e1.svg);
+}
+
+#body-art {
+  background-image: url(/comercio-industria.910da8be.svg);
+}
+
 .seguros {
   position: relative;
   top: 5vh;
