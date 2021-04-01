@@ -536,14 +536,15 @@ footer {
         height: 41px;
     }
     .servicios__container {
-        top: 3%;
+        height: 80vh;
+        top: 10vh;
         grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:    ". . card1"
-                                "card2 card3 card4"
-                                "card5 card6 card7"
-                                "card8 card9 card0";
+        grid-template-areas:    "card1 card2 card3"
+                                "card4 card5 card6"
+                                "card7 card8 card9"
+                                "card0 card10 card11";
 
         .servicios__card--card1 {
             grid-area: card1;
@@ -583,12 +584,20 @@ footer {
         }
         .servicios__card--card0 {
             grid-area: card0;
+            background-image: url(../img/servicios/svg/industria.svg);
+        }
+        .servicios__card--card10 {
+            grid-area: card10;
+            background-image: url(../img/servicios/svg/consorcio.svg);
+        }
+        .servicios__card--card11 {
+            grid-area: card11;
             background-image: url(../img/servicios/svg/comercio-industria.svg);
         }
 
         .servicios__card {
             display: flex;
-            padding: 20%;
+            padding: 15%;
             background-size: contain;
             position: absolute;
             background-position: center;
@@ -769,16 +778,16 @@ footer {
             }
         }
         .servicios__container {
-            top: 0;
+            top: 12vh;
             left: 0;
             width: 100%;
-            height: 94%;
+            height: 80%;
             margin-left: 0%;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:    ". . card1 card2"
-                                    "card3 card4 card5 card6"
-                                    "card7 card8 card9 card0";
+            grid-template-areas:    "card1 card2 card3 card4"
+                                    "card5 card6 card7 card8"
+                                    "card9 card10 card11 card0";
         }
     }
 
