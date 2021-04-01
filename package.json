@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html src/home-office.html src/prepagas.html src/art.html src/consorcio.html",
-    "build": "parcel build src/index.html src/home-office.html"
+    "build": "parcel build src/index.html src/home-office.html src/prepagas.html src/art.html src/consorcio.htmlnp"
   },
   "keywords": [],
   "author": "",
