@@ -34,7 +34,7 @@ html, body {
     scroll-behavior: smooth;
   }
 }
-.offauto .offauto__container .offauto__title h1, .homeoffice .homeoffice__container .homeoffice__title h1, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--title {
+.promo-hogar .promo-hogar__container .promo-hogar__title h1, .offauto .offauto__container .offauto__title h1, .homeoffice .homeoffice__container .homeoffice__title h1, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--title {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 600;
@@ -58,7 +58,7 @@ html, body {
   line-height: 31px;
 }
 
-.offauto .offauto__container .offauto__text p, .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container, .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .navbar .navbar__container .navbar__options li a {
+.promo-hogar .promo-hogar__container .promo-hogar__text p, .promo-hogar .promo-hogar__container .promo-hogar__precio h6, .offauto .offauto__container .offauto__text p, .offauto .offauto__container .offauto__precio h6, .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container, .homeoffice .homeoffice__precio h6, .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card h3, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--mail, .contacto .contacto__container .contacto__right .contacto__right--text .contacto__right--text--telefonos, .contacto .contacto__container .contacto__right .contacto__right--ubicacion p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail, .navbar .navbar__container .navbar__options li a {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: 300;
@@ -311,6 +311,29 @@ html, body {
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   padding-top: 5%;
+}
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio {
+  display: flex;
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  width: 5vw;
+  min-width: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio h6 {
+  color: #F9F9F9;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio .carousel__precio--img {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transform: translateX(-70%);
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__image {
   z-index: 0;
@@ -1121,12 +1144,34 @@ footer .footer__container .footer__redes a img {
 .homeoffice .homeoffice__container .homeoffice__beneficios .homeoffice__beneficios__card img {
   width: 40px;
 }
+.homeoffice .homeoffice__precio {
+  display: flex;
+  position: relative;
+  left: 90vw;
+  width: 5vw;
+  min-width: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.homeoffice .homeoffice__precio h6 {
+  color: #F9F9F9;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
+.homeoffice .homeoffice__precio .carousel__precio--img {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transform: translateX(-70%);
+}
 .homeoffice .tabla {
   z-index: 0;
   width: 90%;
   height: auto;
   position: relative;
-  top: 5vh;
+  top: 0vh;
   left: 5vw;
   display: flex;
   justify-content: center;
@@ -1219,7 +1264,7 @@ footer .footer__container .footer__redes a img {
     line-height: 30px;
   }
   .homeoffice .tabla {
-    top: 15vh;
+    top: 0vh;
   }
   .homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad {
     width: 45%;
@@ -1271,7 +1316,7 @@ footer .footer__container .footer__redes a img {
     align-self: center;
   }
   .homeoffice .tabla {
-    top: 25vh;
+    top: 0vh;
   }
   .homeoffice .tabla .tabla__section {
     margin: 2em auto;
@@ -1301,15 +1346,82 @@ footer .footer__container .footer__redes a img {
 }
 @media only screen and (min-width: 1919px) {
   .homeoffice .tabla {
-    top: 15vh;
+    top: 0vh;
   }
   .homeoffice .homeoffice__footer {
     height: 35vh;
   }
 }
 .offauto {
+  height: auto;
   width: 100vw;
-  height: 100vh;
+  top: 0vh;
+  background-image: url(/background.24b1f55a.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position-y: 40%;
+}
+.offauto .offauto__container {
+  z-index: 0;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  top: 10vh;
+}
+.offauto .offauto__container .offauto__title {
+  width: 100vw;
+  height: 80px;
+}
+.offauto .offauto__container .offauto__title img {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 40px;
+  display: flex;
+  height: auto;
+}
+.offauto .offauto__container .offauto__title h1 {
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 22%;
+}
+.offauto .offauto__container .offauto__precio {
+  display: flex;
+  position: relative;
+  left: 90vw;
+  width: 5vw;
+  min-width: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.offauto .offauto__container .offauto__precio h6 {
+  color: #F9F9F9;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
+.offauto .offauto__container .offauto__precio .carousel__precio--img {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transform: translateX(-70%);
+}
+.offauto .offauto__container .offauto__text {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  top: 10vh;
+}
+.offauto .offauto__container .offauto__cta {
+  position: relative;
+  width: 70vw;
+  max-width: 300px;
+  top: 20vh;
+  left: 15vw;
 }
 .offauto .offauto__container .offauto__cta h1 {
   text-transform: uppercase;
@@ -1318,13 +1430,137 @@ footer .footer__container .footer__redes a img {
   letter-spacing: 3px;
   line-height: 2.8em;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   height: 2.8em;
   border-radius: 4px;
-  margin: 1.5em 0 1.8em;
   color: #fff;
   background: linear-gradient(135.2deg, #12497F 29.35%, #125C90 39.1%, #1291C9 60.68%, #079EDA 64.87%);
   border: 2px solid #F9F9F9;
+}
+
+@media only screen and (min-width: 768px) {
+  .offauto .offauto__container .offauto__title h1 {
+    top: 2vh;
+    left: 17%;
+  }
+  .offauto .offauto__container .offauto__text {
+    top: 5vh;
+  }
+  .offauto .offauto__container .offauto__cta {
+    left: 10%;
+    top: 10vh;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .offauto .offauto__container .offauto__title h1 {
+    left: 15%;
+    top: 3vh;
+  }
+}
+.promo-hogar {
+  height: auto;
+  width: 100vw;
+  top: 0vh;
+  background-image: url(/background.802a5af2.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position-y: 40%;
+}
+.promo-hogar .promo-hogar__container {
+  z-index: 0;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  top: 10vh;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__title {
+  width: 100vw;
+  height: 80px;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__title img {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 40px;
+  display: flex;
+  height: auto;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__title h1 {
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  left: 22%;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__precio {
+  display: flex;
+  position: relative;
+  left: 90vw;
+  width: 5vw;
+  min-width: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__precio h6 {
+  color: #F9F9F9;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__precio .carousel__precio--img {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transform: translateX(-70%);
+}
+.promo-hogar .promo-hogar__container .promo-hogar__text {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  top: 10vh;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__cta {
+  position: relative;
+  width: 70vw;
+  max-width: 300px;
+  top: 20vh;
+  left: 15vw;
+}
+.promo-hogar .promo-hogar__container .promo-hogar__cta h1 {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 2.8em;
+  display: inline-block;
+  width: 100%;
+  height: 2.8em;
+  border-radius: 4px;
+  color: #fff;
+  background: linear-gradient(135.2deg, #12497F 29.35%, #125C90 39.1%, #1291C9 60.68%, #079EDA 64.87%);
+  border: 2px solid #F9F9F9;
+}
+
+@media only screen and (min-width: 768px) {
+  .promo-hogar .promo-hogar__container .promo-hogar__title h1 {
+    top: 2vh;
+    left: 17%;
+  }
+  .promo-hogar .promo-hogar__container .promo-hogar__text {
+    top: 5vh;
+  }
+  .promo-hogar .promo-hogar__container .promo-hogar__cta {
+    left: 10%;
+    top: 10vh;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .promo-hogar .promo-hogar__container .promo-hogar__title h1 {
+    left: 15%;
+    top: 3vh;
+  }
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

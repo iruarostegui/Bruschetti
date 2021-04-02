@@ -100,13 +100,37 @@
             // }   
         }
     }
-    
+
+    .homeoffice__precio {
+        display: flex;
+        position: relative;
+        left: 90vw;
+        width: 5vw;
+        min-width: 100px;
+        justify-items: center;
+        align-items:center;
+        h6 {
+            @extend %text;
+            color: $white;
+            text-align:center;
+            z-index: 1;
+            display: flex;
+            position: relative;
+        }
+        .carousel__precio--img {
+            width: 100%;
+            display: flex;
+            position: relative;
+            transform: translateX(-70%);
+        }
+    }
+
     .tabla {
         z-index: 0;
         width: 90%;
         height: auto;
         position: relative;
-        top: 5vh;
+        top: 0vh;
         left: 5vw;
         display: flex;
         justify-content: center;
@@ -227,7 +251,7 @@
             }
         }
         .tabla {
-            top: 15vh;
+            top: 0vh;
             .tabla__section {
                 .tabla__planes {
                     .tabla__plan__unidad {
@@ -288,8 +312,11 @@
                 }
             }
         }
+
+
+
         .tabla {
-            top: 25vh;
+            top: 0vh;
             .tabla__section {
                 margin: 2em auto;
                 .tabla__planes {
@@ -328,7 +355,7 @@
 @media only screen and (min-width: 1919px) {
     .homeoffice {
         .tabla {
-            top: 15vh;
+            top: 0vh;
         }
         .homeoffice__footer {
             height: 35vh;

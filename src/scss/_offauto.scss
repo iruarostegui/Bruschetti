@@ -1,18 +1,76 @@
 .offauto {
+    height: auto;
     width: 100vw;
-    height: 100vh;
+    top: 0vh;
+    background-image: url(../img/carousel/Descuento-auto/background.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    background-position-y: 40%;
     .offauto__container {
+        z-index: 0;
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+        top: 10vh;
         .offauto__title {
+            width: 100vw;
+            height: 80px;
+            img {
+                position: relative;
+                top: 0;
+                left: 10%;
+                width: 40px;
+                display: flex;
+                height: auto;
+            }
             h1 {
+                height: auto;
+                display: flex;
+                position: absolute;
+                top: 1vh;
+                left: 22%;
                 @extend %bigHeader;
             }
         }
+        .offauto__precio {
+            display: flex;
+            position: relative;
+            left: 90vw;
+            width: 5vw;
+            min-width: 100px;
+            justify-items: center;
+            align-items:center;
+            h6 {
+                @extend %text;
+                color: $white;
+                text-align:center;
+                z-index: 1;
+                display: flex;
+                position: relative;
+            }
+            .carousel__precio--img {
+                width: 100%;
+                display: flex;
+                position: relative;
+                transform: translateX(-70%);
+            }
+        }
         .offauto__text {
+            width: 100%;
+            position: relative;
+            left: 10%;
+            top: 10vh;
             p {
                 @extend %text;
             }
         }
         .offauto__cta {
+            position: relative;
+            width: 70vw;
+            max-width: 300px;
+            top: 20vh;
+            left: 15vw;
             h1 {
                 text-transform: uppercase;
                 text-decoration: none;
@@ -20,13 +78,45 @@
                 letter-spacing: 3px;
                 line-height: 2.8em;
                 display: inline-block;
-                width: 80%;
+                width: 100%;
                 height: 2.8em;
                 border-radius: 4px;
-                margin: 1.5em 0 1.8em;
                 color: #fff;
                 background: $lightGradient;
                 border: 2px solid $white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .offauto {
+        .offauto__container {
+            .offauto__title {
+                h1 {
+                    top: 2vh;
+                    left: 17%;
+                }
+            }
+            .offauto__text {
+                top: 5vh;
+            }
+            .offauto__cta {
+                left: 10%;
+                top: 10vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .offauto {
+        .offauto__container {
+            .offauto__title {
+                h1 {
+                    left: 15%;
+                    top: 3vh;
+                }
             }
         }
     }
