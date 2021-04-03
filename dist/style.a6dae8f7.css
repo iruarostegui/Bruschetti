@@ -1088,7 +1088,7 @@ footer .footer__container .footer__redes a img {
   height: auto;
   width: 100vw;
   top: 0vh;
-  background-image: url(/background.65a1f2e6.svg);
+  background-image: url(/background-clean.43e75da4.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
@@ -1465,7 +1465,7 @@ footer .footer__container .footer__redes a img {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
-  background-position-y: 40%;
+  background-position-y: 0;
 }
 .promo-hogar .promo-hogar__container {
   z-index: 0;
