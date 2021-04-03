@@ -849,39 +849,6 @@ footer .footer__container .footer__redes a img {
     top: 4vh;
   }
 }
-@media only screen and (max-width: 900px) {
-  .div.contact-elements p.pull-right {
-    float: none;
-  }
-
-  .center-btn {
-    text-align: left;
-    height: 100%;
-  }
-
-  input {
-    width: 100%;
-  }
-
-  label {
-    width: 100%;
-    display: inline-block;
-    float: left;
-    clear: both;
-  }
-
-  li, p {
-    width: 100%;
-  }
-
-  input.btn {
-    margin: 0 0 0.5em;
-  }
-
-  li small {
-    display: none;
-  }
-}
 @media only screen and (min-width: 1080px) {
   .navbar {
     width: 100vw;
