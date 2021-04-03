@@ -463,7 +463,7 @@ html, body {
 .contacto {
   position: relative;
   height: 94vh;
-  min-height: 650px;
+  min-height: 900px;
   width: 80vw;
   margin: 0 auto;
   top: 5vh;
@@ -484,39 +484,185 @@ html, body {
   height: 80vh;
   min-height: 600px;
 }
-.contacto .contacto__container .contacto__left {
-  position: relative;
-  top: 0;
-  height: 55%;
-  width: 100%;
-  padding: 3%;
-  color: #343434;
-  background-color: #1e71b92f;
-  border: 2px solid #343434;
-  border-radius: 5px;
-  backdrop-filter: blur(2px);
+.contacto .contacto__container .contacto__left .mensaje__contacto {
+  padding-top: 2vh;
 }
-.contacto .contacto__container .contacto__left form {
+.contacto .contacto__container .contacto__left .mensaje__contacto .message {
+  padding-top: 10%;
+}
+.contacto .contacto__container .contacto__left .contact-elements {
   position: relative;
-  overflow: auto;
   width: 100%;
-  height: 100%;
+}
+.contacto .contacto__container .contacto__left input.input-field,
+.contacto .contacto__container .contacto__left .tel-number-field,
+.contacto .contacto__container .contacto__left .textarea-field,
+.contacto .contacto__container .contacto__left .select-field {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-}
-.contacto .contacto__container .contacto__left form label {
-  display: block;
-  color: grey;
-}
-.contacto .contacto__container .contacto__left form textarea {
-  padding: 3%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 30%;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
 }
-.contacto .contacto__container .contacto__left form input {
-  margin-bottom: 2%;
+.contacto .contacto__container .contacto__left .input-field:focus,
+.contacto .contacto__container .contacto__left .tel-number-field:focus,
+.contacto .contacto__container .contacto__left .textarea-field:focus,
+.contacto .contacto__container .contacto__left .select-field:focus {
+  border: 1px solid #0C0;
+}
+.contacto .contacto__container .contacto__left div.contact, .contacto .contacto__container .contacto__left textarea, .contacto .contacto__container .contacto__left input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contacto .contacto__container .contacto__left .contact {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+}
+.contacto .contacto__container .contacto__left .contact h2 {
+  font-size: 50px;
+}
+.contacto .contacto__container .contacto__left .headline {
+  font-size: 50px;
+}
+.contacto .contacto__container .contacto__left .center-btn {
+  text-align: center;
+}
+.contacto .contacto__container .contacto__left .container {
+  min-width: 200px;
+  height: 100%;
+  margin: 0px auto 0px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+}
+.contacto .contacto__container .contacto__left .row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.contacto .contacto__container .contacto__left .row.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background-color: #63a7d6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+.contacto .contacto__container .contacto__left .row.body {
+  padding: 0em 2.5em 1em;
+}
+.contacto .contacto__container .contacto__left div.contact-elements p.pull-right {
+  float: right;
+}
+.contacto .contacto__container .contacto__left div.contact-elements p.left {
+  float: left;
+}
+.contacto .contacto__container .contacto__left .btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  box-shadow: 1px 1px 4px #ccc;
+  -moz-box-shadow: 1px 1px 4px #ccc;
+  -webkit-box-shadow: 1px 1px 4px #ccc;
+}
+.contacto .contacto__container .contacto__left .btn:hover {
+  background-color: #bfbfbf;
+}
+.contacto .contacto__container .contacto__left .btn.btn-submit {
+  background-color: #63a7d6;
+  border-bottom-color: #374d78;
+}
+.contacto .contacto__container .contacto__left .btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+.contacto .contacto__container .contacto__left .contact-elements {
+  max-width: 100%;
   display: block;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li:last-child {
+  margin: 0;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li p.right {
+  float: right;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li .divider {
+  border: 0;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+  background: #eaeaea;
+  opacity: 0.5;
+}
+.contacto .contacto__container .contacto__left .contact-elements ul li, .contacto .contacto__container .contacto__left .req {
+  font-size: 15px;
+  color: #63a7d6;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bolder;
+}
+.contacto .contacto__container .contacto__left .contact-elements label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #4f6fad;
+  font-size: 1em;
+}
+.contacto .contacto__container .contacto__left .contact-elements input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+.contacto .contacto__container .contacto__left .contact-elements textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+  resize: none;
+  overflow: auto;
+}
+.contacto .contacto__container .contacto__left .contact-elements small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
 }
 .contacto .contacto__container .contacto__right {
   position: relative;
@@ -876,6 +1022,39 @@ footer .footer__container .footer__redes a img {
     top: 4vh;
   }
 }
+@media only screen and (max-width: 900px) {
+  .div.contact-elements p.pull-right {
+    float: none;
+  }
+
+  .center-btn {
+    text-align: left;
+    height: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+
+  li, p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 0 0 0.5em;
+  }
+
+  li small {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1080px) {
   .navbar {
     width: 100vw;
@@ -925,75 +1104,6 @@ footer .footer__container .footer__redes a img {
   }
   footer .footer__container .footer__redes {
     width: 60%;
-  }
-}
-@media only screen and (min-width: 1550px) {
-  .contacto {
-    height: 60vh;
-  }
-  .contacto .contacto__title {
-    height: 2em;
-    line-height: 2em;
-  }
-  .contacto .contacto__title h1 {
-    font-size: 2em;
-  }
-  .contacto .contacto__container {
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    height: 80%;
-    display: block;
-  }
-  .contacto .contacto__container .contacto__left {
-    position: absolute;
-    width: 25%;
-    padding: 2%;
-  }
-  .contacto .contacto__container .contacto__left form {
-    position: relative;
-    top: 10%;
-  }
-  .contacto .contacto__container .contacto__right {
-    position: absolute;
-    width: 20%;
-    left: 27%;
-    padding: 0;
-  }
-  .contacto .contacto__container .contacto__right .contacto__right--logo {
-    display: relative;
-    top: 10%;
-    left: 5%;
-  }
-  .contacto .contacto__container .contacto__right .contacto__right--ubicacion {
-    position: relative;
-    width: 100%;
-    left: 5%;
-    top: 30%;
-  }
-  .contacto .contacto__container .contacto__right .contacto__right--iconos {
-    left: 5%;
-    top: 60%;
-  }
-  .contacto .contacto__container .contacto__right .contacto__right--text {
-    left: 17%;
-  }
-  .contacto .contacto__map {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    top: 25%;
-  }
-  .contacto .contacto__map iframe {
-    position: absolute;
-    height: 100%;
-    transform: translateY(0);
-    top: 0;
-    width: 51%;
-    top: 0;
-    left: 49%;
-    z-index: -1;
-    border-radius: 5px;
   }
 }
 .seguros {
