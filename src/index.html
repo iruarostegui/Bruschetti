@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.scss">
-    <script type="text/javascript" src="js/contacto.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Bruschetti | Asesores en seguros</title>
 </head>
 <body>
@@ -330,38 +330,37 @@
         <div class="contacto__container">
 
             <div class="contacto__left">
-                <?php include 'php/contacto.php';?>
-                <form class="contact container shadow" id="contact_form" action="php/contacto.php" method=”GET”>
-                    <div class="contact row body" id="contact_body">
-                      <div class="contact-elements">
-                        <ul>
-                          <li>
-                            <p class="left">
-                              <label for="name">nombre</label>
-                              <input type="text" name="name" id="name" required="true" class="input-field" placeholder="Nombre Apellido" />
-                            </p>
-                            <p class="pull-right">
-                              <label for="phone2">telefono</label>
-                              <input type="text" name="phone2" maxlength="15" class="tel-number-field long" placeholder="223 123 4567" />
-                            </p>
-                          </li>
-                          <div class="center-btn" style="position:relevant; height:5vh;">
-                            <li>
-                              <label for="email">mail <span class="req">*</span></label>
-                              <input type="email" name="email" required="true" class="input-field" placeholder="tu.mail@gmail.com" />
-                            </li>
-                          </div>
-                          <li class="mensaje__contacto">
-                            <label for="message">mensaje</label>
-                            <textarea cols="46" rows="8" name="message" id="message" class="textarea-field" required="true"></textarea>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="center-btn" style="position:relevant; height:5vh;">
-                        <li>
-                          <input id="submit_btn" class="btn btn-submit" type="submit" value="Enviar" />
-                        </li>
-                      </div>
+                <form class="contact__form container" method="post" action="php/mail.php">
+                    <!-- Starting of successful form message -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                Your message was sent successfully.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ending of successful form message -->
+                
+                    <!-- Element of the ajax contact form -->
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input name="name" type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="email" type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="col-12 form-group">
+                            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                        </div>
                     </div>
                 </form>
             </div>
