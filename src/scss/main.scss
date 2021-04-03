@@ -226,13 +226,14 @@
 .servicios {
     position: relative;
     height: 94vh;
-    min-height: 750px;
+    min-height: 850px;
     width: 90vw;
     margin: 0 auto;
     top: 5vh;
 
     .servicios__title {
         @extend %header;
+        font-size: 34px;
         text-transform: uppercase;
         position: relative;
         height: 41px;
@@ -569,6 +570,7 @@ footer {
                 .carousel__slide {
                     .carousel__text {
                         left: 2vw;
+                        width: 30%;
                         .carousel__text--detail {
                             background-color: rgba(255, 255, 255, 0);
                         }

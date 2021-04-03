@@ -389,12 +389,13 @@ html, body {
 .servicios {
   position: relative;
   height: 94vh;
-  min-height: 750px;
+  min-height: 850px;
   width: 90vw;
   margin: 0 auto;
   top: 5vh;
 }
 .servicios .servicios__title {
+  font-size: 34px;
   text-transform: uppercase;
   position: relative;
   height: 41px;
@@ -667,6 +668,7 @@ footer .footer__container .footer__redes a img {
 
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text {
     left: 2vw;
+    width: 30%;
   }
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail {
     background-color: rgba(255, 255, 255, 0);
@@ -994,58 +996,6 @@ footer .footer__container .footer__redes a img {
     border-radius: 5px;
   }
 }
-#body-auto {
-  background-image: url(/auto.9d8d4f5d.svg);
-}
-
-#body-motos {
-  background-image: url(/moto.bba2d8bd.svg);
-}
-
-#body-bici {
-  background-image: url(/bici.119895ae.svg);
-}
-
-#body-civil {
-  background-image: url(/responsabilidad-civil.92a3f592.svg);
-}
-
-#body-caucion {
-  background-image: url(/caucion.77b74ca7.svg);
-}
-
-#body-personales {
-  background-image: url(/accidentes-personales.aa9ed4e8.svg);
-}
-
-#body-vida {
-  background-image: url(/vida.e9341d46.svg);
-}
-
-#body-salud {
-  background-image: url(/salud.f549f39b.svg);
-}
-
-#body-hogar {
-  background-image: url(/hogar.d088b260.svg);
-}
-
-#body-comercio {
-  background-image: url(/industria.5d6d3ab7.svg);
-}
-
-#body-prepagas {
-  background-image: url(/salud.f549f39b.svg);
-}
-
-#body-consorcio {
-  background-image: url(/consorcio.d33044e1.svg);
-}
-
-#body-art {
-  background-image: url(/comercio-industria.910da8be.svg);
-}
-
 .seguros {
   position: relative;
   top: 5vh;
@@ -1053,10 +1003,11 @@ footer .footer__container .footer__redes a img {
   height: 100vh;
 }
 .seguros .seguros__title {
+  font-size: 22px;
   text-transform: uppercase;
   position: relative;
   height: auto;
-  width: 30%;
+  width: 70%;
   left: 10%;
   white-space: normal;
 }
@@ -1070,7 +1021,7 @@ footer .footer__container .footer__redes a img {
 .seguros .seguros__container .seguros__text {
   position: absolute;
   left: 0;
-  width: 20%;
+  width: 70%;
 }
 .seguros .seguros__container .seguros__text p {
   position: relative;
@@ -1088,10 +1039,11 @@ footer .footer__container .footer__redes a img {
 }
 
 .seguros-body {
+  background-image: url(/background-phone.27e27193.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
-  background-size: 40%;
+  background-position-y: 0%;
+  background-size: 150%;
   position: absolute;
   top: 6vh;
   background-color: #F9F9F9;
@@ -1101,6 +1053,73 @@ footer .footer__container .footer__redes a img {
 }
 
 @media only screen and (min-width: 768px) {
+  .seguros-body {
+    background-size: 40%;
+    background-position-y: 70%;
+    background-attachment: fixed;
+  }
+
+  #body-auto {
+    background-image: url(/auto.9d8d4f5d.svg);
+  }
+
+  #body-motos {
+    background-image: url(/moto.bba2d8bd.svg);
+  }
+
+  #body-bici {
+    background-image: url(/bici.119895ae.svg);
+  }
+
+  #body-civil {
+    background-image: url(/responsabilidad-civil.92a3f592.svg);
+  }
+
+  #body-caucion {
+    background-image: url(/caucion.77b74ca7.svg);
+  }
+
+  #body-personales {
+    background-image: url(/accidentes-personales.aa9ed4e8.svg);
+  }
+
+  #body-vida {
+    background-image: url(/vida.e9341d46.svg);
+  }
+
+  #body-salud {
+    background-image: url(/salud.f549f39b.svg);
+  }
+
+  #body-hogar {
+    background-image: url(/hogar.d088b260.svg);
+  }
+
+  #body-comercio {
+    background-image: url(/industria.5d6d3ab7.svg);
+  }
+
+  #body-prepagas {
+    background-image: url(/salud.f549f39b.svg);
+  }
+
+  #body-consorcio {
+    background-image: url(/consorcio.d33044e1.svg);
+  }
+
+  #body-art {
+    background-image: url(/comercio-industria.910da8be.svg);
+  }
+
+  .seguros {
+    top: 10vh;
+  }
+  .seguros .seguros__title {
+    font-size: 34px;
+  }
+  .seguros .seguros__container .seguros__text {
+    width: 18%;
+  }
   .seguros .seguros__container .seguros__text p {
     padding: 5% 0% 5% 0%;
   }
