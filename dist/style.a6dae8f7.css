@@ -303,35 +303,41 @@ html, body {
   position: absolute;
   top: 10%;
   left: 0;
-  width: 50%;
+  width: 70%;
+  height: 90vh;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   position: relative;
-  top: 35%;
+  top: 10%;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
-  padding-top: 5%;
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio {
   display: flex;
   position: absolute;
   top: 10vh;
-  right: 10vw;
-  width: 5vw;
+  right: 0vw;
+  width: 3vw;
   min-width: 100px;
   justify-items: center;
   align-items: center;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio h6 {
-  color: #F9F9F9;
-  text-align: center;
+  color: #343434;
+  width: 90px;
+  text-align: right;
   z-index: 1;
   display: flex;
   position: relative;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio .carousel__precio--img {
   width: 100%;
-  display: flex;
+  display: none;
   position: relative;
   transform: translateX(-70%);
 }
@@ -383,6 +389,7 @@ html, body {
 .servicios {
   position: relative;
   height: 94vh;
+  min-height: 750px;
   width: 90vw;
   margin: 0 auto;
   top: 5vh;
@@ -411,7 +418,7 @@ html, body {
 }
 .servicios .servicios__container .servicios__card {
   height: 100%;
-  min-height: 35px;
+  min-height: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -455,7 +462,7 @@ html, body {
 .contacto {
   position: relative;
   height: 94vh;
-  min-height: 600px;
+  min-height: 650px;
   width: 80vw;
   margin: 0 auto;
   top: 5vh;
@@ -656,6 +663,20 @@ footer .footer__container .footer__redes a img {
     width: 40vw;
     right: 10vw;
     left: auto;
+  }
+
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text {
+    left: 2vw;
+  }
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio h6 {
+    text-align: center;
+    color: #F9F9F9;
+  }
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio .carousel__precio--img {
+    display: flex;
   }
 
   .servicios .servicios__title {
