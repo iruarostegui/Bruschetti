@@ -117,74 +117,64 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/contact.js":[function(require,module,exports) {
+$(document).ready(function () {
+  $("#submit_btn").click(function () {
+    var proceed = true; //simple validation at client's end
+    //loop through each field and we simply change border color to red for invalid fields       
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+    $("#contact_form input[required=true], #contact_form textarea[required=true]").each(function () {
+      $(this).css('border-color', '');
 
-  return bundleURL;
-}
+      if (!$.trim($(this).val())) {
+        //if this field is empty 
+        $(this).css('border-color', 'red'); //change border color to red   
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+        proceed = false; //set do not proceed flag
+      } //check invalid email
 
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
 
-  return '/';
-}
+      var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
+      if ($(this).attr("type") == "email" && !email_reg.test($.trim($(this).val()))) {
+        $(this).css('border-color', 'red'); //change border color to red   
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
+        proceed = false; //set do not proceed flag              
       }
-    }
+    });
 
-    cssTimeout = null;
-  }, 50);
-}
+    if (proceed) //everything looks good! proceed...
+      {
+        //get input field values data to be sent to server
+        post_data = {
+          'user_name': $('input[name=name]').val(),
+          'user_email': $('input[name=email]').val(),
+          'phone_number': $('input[name=phone2]').val(),
+          'msg': $('textarea[name=message]').val()
+        }; //Ajax post data to server
 
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+        $.post('php/contact_me.php', post_data, function (response) {
+          if (response.type == 'error') {
+            //load json data from server and output message     
+            output = '<div class="error">' + response.text + '</div>';
+          } else {
+            output = '<div class="success">' + response.text + '</div>'; //reset values in all input fields
+
+            $("#contact_form  input[required=true], #contact_form textarea[required=true]").val('');
+            $("#contact_form #contact_body").slideUp(); //hide form after success
+          }
+
+          $("#contact_form #contact_results").hide().html(output).slideDown();
+        }, 'json');
+      }
+  }); //reset previously set border colors and hide all message on .keyup()
+
+  $("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function () {
+    $(this).css('border-color', '');
+    $("#result").slideUp();
+  });
+});
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -388,5 +378,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/index.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/contact.js"], null)
+//# sourceMappingURL=/contact.d3f2fcf9.js.map

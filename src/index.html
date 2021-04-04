@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.scss">
-    <script src="mail.php"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="php/contact_me.php"></script>
+    <script src="js/contact.js"></script>
     <title>Bruschetti | Asesores en seguros</title>
 </head>
 <body>
@@ -331,44 +332,48 @@
         <div class="contacto__container">
 
             <div class="contacto__left">
-                <!-- Starting of ajax contact form -->
-                <div class="container">
-                    <h2>Simple Ajax Form</h2>
-                    <pre>You can find the php file html's comment</pre>
-                </div>
-                <form class="contact__form container" method="post" action="mail.php">
-                    <!-- Starting of successful form message -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                Your message was sent successfully.
-                            </div>
-                        </div>
+                    <div class="contact container shadow" id="contact_form">
+                    <div class="contact row header">
+                    <h2>CONTACT US</h2>
+                    <h3>Request information, book a studio, or plan your event!</h3>
+                    <div id="contact_results"></div>
                     </div>
-                    <!-- Ending of successful form message -->
+                    <div class="contact row body" id="contact_body">
+                    <div class="contact-elements">
+                        <ul>
+                        <li>
+                            <p class="left">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" required="true" class="input-field" placeholder="Jane Doe" />
+                            </p>
+                            <p class="pull-right">
+                            <label for="phone2">phone</label>
+                            <input type="text" name="phone2" maxlength="15" class="tel-number-field long" placeholder="123 456 7890" />
+                            </p>
+                        </li>
+                        <div class="center-btn" style="position:relevant; height:5vh;">
+                            <li>
+                            <label for="email">email <span class="req">*</span></label>
+                            <input type="email" name="email" required="true" class="input-field" placeholder="jane.doe@gmail.com" />
+                            </li>
+                        </div>
                 
-                    <!-- Element of the ajax contact form -->
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input name="name" type="text" class="form-control" placeholder="Name" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input name="email" type="email" class="form-control" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input name="phone" type="text" class="form-control" placeholder="Phone" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="col-12 form-group">
-                            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input name="submit" type="submit" class="btn btn-success" value="Send Message">
-                        </div>
+                        <li>
+                            <div class="contact divider"></div>
+                        </li>
+                        <li>
+                            <label for="message">enquiry</label>
+                            <textarea cols="46" rows="8" name="message" id="message" class="textarea-field" required="true"></textarea>
+                        </li>
+                        </ul>
                     </div>
-                </form>
+                    <div class="center-btn" style="position:relevant; height:5vh;">
+                        <li>
+                        <input id="submit_btn" class="btn btn-submit" type="submit" value="Submit" />
+                        </li>
+                    </div>
+                    </div>
+                </div>
             </div>
 
             <div class="contacto__right">
