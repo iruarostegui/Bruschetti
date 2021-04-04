@@ -1091,7 +1091,7 @@ footer .footer__container .footer__redes a img {
 .homeoffice .homeoffice__precio {
   display: flex;
   position: relative;
-  left: 90vw;
+  left: 70vw;
   width: 5vw;
   min-width: 100px;
   justify-items: center;
@@ -1115,7 +1115,7 @@ footer .footer__container .footer__redes a img {
   width: 90%;
   height: auto;
   position: relative;
-  top: 0vh;
+  top: 5vh;
   left: 5vw;
   display: flex;
   justify-content: center;
@@ -1335,7 +1335,8 @@ footer .footer__container .footer__redes a img {
 .offauto .offauto__container .offauto__precio {
   display: flex;
   position: relative;
-  left: 90vw;
+  top: 5vh;
+  left: 70vw;
   width: 5vw;
   min-width: 100px;
   justify-items: center;
@@ -1440,7 +1441,7 @@ footer .footer__container .footer__redes a img {
 .promo-hogar .promo-hogar__container .promo-hogar__precio {
   display: flex;
   position: relative;
-  left: 90vw;
+  left: 70vw;
   width: 5vw;
   min-width: 100px;
   justify-items: center;
