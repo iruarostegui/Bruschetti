@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.scss">
     <script src="mail.php"></script>
-    <script src="js/contacto.js"></script>
+    <script src="script.js"></script>
     <title>Bruschetti | Asesores en seguros</title>
 </head>
 <body>
@@ -331,12 +331,17 @@
         <div class="contacto__container">
 
             <div class="contacto__left">
-                <form class="contact__form container" method="POST" action="mail.php">
+                <!-- Starting of ajax contact form -->
+                <div class="container">
+                    <h2>Simple Ajax Form</h2>
+                    <pre>You can find the php file html's comment</pre>
+                </div>
+                <form class="contact__form container" method="post" action="mail.php">
                     <!-- Starting of successful form message -->
                     <div class="row">
                         <div class="col-12">
                             <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                Su mensaje fue enviado correctamente y nos contactaremos a la brevedad.
+                                Your message was sent successfully.
                             </div>
                         </div>
                     </div>
