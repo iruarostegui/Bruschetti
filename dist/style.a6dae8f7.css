@@ -484,12 +484,58 @@ html, body {
   height: 80vh;
   min-height: 600px;
 }
-.contacto .contacto__container .contacto__left h2 {
-  text-align: center;
-  margin: 20px;
+.contacto .contacto__container .contacto__left {
+  height: 38%;
+  width: 100%;
+  color: #343434;
+  background-color: #1e71b92f;
+  border: 2px solid #343434;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
 }
-.contacto .contacto__container .contacto__left pre {
-  text-align: center;
+.contacto .contacto__container .contacto__left .contact__form--container {
+  height: 100%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form {
+  height: 100%;
+  max-height: 300px;
+  position: relative;
+  top: 4%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info {
+  height: 8%;
+  margin-bottom: 5px;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info input {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info--mensaje {
+  height: 35%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info--mensaje textarea {
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__btn {
+  height: 15%;
+}
+.contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__btn input {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 2.8em;
+  display: inline-block;
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+  border-radius: 4px;
+  color: #fff;
+  background: linear-gradient(135.2deg, #12497F 29.35%, #125C90 39.1%, #1291C9 60.68%, #079EDA 64.87%);
+  border: 2px solid #F9F9F9;
 }
 .contacto .contacto__container .contacto__right {
   position: relative;
@@ -777,13 +823,17 @@ footer .footer__container .footer__redes a img {
     justify-content: space-between;
   }
   .contacto .contacto__container .contacto__left {
-    top: 0vh;
-    left: 0vh;
     height: 100%;
     width: 50%;
   }
-  .contacto .contacto__container .contacto__left form input {
-    margin-bottom: 2%;
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form {
+    max-height: 450px;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__btn {
+    height: 10%;
+    width: 50%;
+    position: absolute;
+    right: 2%;
   }
   .contacto .contacto__container .contacto__right {
     top: 0vh;
@@ -885,6 +935,33 @@ footer .footer__container .footer__redes a img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "card1 card2 card3 card4" "card5 card6 card7 card8" "card9 card10 card11 card0";
+  }
+
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form {
+    padding-left: 5%;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info {
+    width: 47%;
+    height: 9%;
+    margin-left: 0;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info input {
+    margin-left: 0px;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info--mensaje {
+    width: 90%;
+    height: 60%;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__info--mensaje textarea {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+  }
+  .contacto .contacto__container .contacto__left .contact__form--container .contacto__form .contacto__form__btn {
+    right: 8%;
+    max-width: 250px;
   }
 
   footer {
