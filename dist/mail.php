@@ -2,7 +2,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "redes@bruschetti.com.ar";
+        $mail_to = "info@bruschetti.com.ar";
         
         # Sender Data
         $subject = trim($_POST["subject"]);
@@ -19,10 +19,10 @@
         }
         
         # Mail Content
-        $content = "Name: $name\n";
+        $content = "Nombre: $name\n";
         $content .= "Email: $email\n\n";
-        $content .= "Phone: $phone\n";
-        $content .= "Message:\n$message\n";
+        $content .= "Telefono: $phone\n";
+        $content .= "Mensaje:\n$message\n";
 
         # email headers.
         $headers = "From: $name &lt;$email&gt;";
