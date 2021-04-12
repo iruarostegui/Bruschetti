@@ -1337,7 +1337,7 @@ footer .footer__container .footer__redes a img {
     align-self: center;
   }
   .homeoffice .tabla {
-    top: 0vh;
+    top: 5vh;
   }
   .homeoffice .tabla .tabla__section {
     margin: 2em auto;
@@ -1444,6 +1444,7 @@ footer .footer__container .footer__redes a img {
   max-width: 300px;
   top: 20vh;
   left: 15vw;
+  cursor: pointer;
 }
 .offauto .offauto__container .offauto__cta h1 {
   text-transform: uppercase;
@@ -1549,6 +1550,7 @@ footer .footer__container .footer__redes a img {
   max-width: 300px;
   top: 20vh;
   left: 15vw;
+  cursor: pointer;
 }
 .promo-hogar .promo-hogar__container .promo-hogar__cta h1 {
   text-transform: uppercase;
