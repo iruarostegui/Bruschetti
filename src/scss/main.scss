@@ -141,6 +141,9 @@
                 h3 {
                 @extend %subHeader;
                 padding-top: 1vh; 
+                p {
+                    @extend %footer;
+                }
                 }
                 }
                 .carousel__text--detail {

@@ -66,7 +66,7 @@ html, body {
   line-height: 25px;
 }
 
-.promo-hogar .promo-hogar__container .promo-hogar__precio p, .offauto .offauto__container .offauto__precio p, .homeoffice .homeoffice__precio p, .seguros .seguros__container .seguros__text .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.promo-hogar .promo-hogar__container .promo-hogar__precio p, .offauto .offauto__container .offauto__precio p, .homeoffice .homeoffice__precio p, .seguros .seguros__container .seguros__text .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description h3 p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
