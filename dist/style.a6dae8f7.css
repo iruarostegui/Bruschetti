@@ -50,7 +50,7 @@ html, body {
   line-height: 41px;
 }
 
-.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .title, .seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
+.homeoffice .tabla .tabla__section .tabla__planes .tabla__plan__unidad .tabla__plan__unidad--container .title, .seguros .seguros__container .seguros__text h3, footer .footer__container .footer__contacto h3, footer .footer__container .footer__servicios h3, .contacto .contacto__container .contacto__right .contacto__right--ubicacion h6, .servicios .servicios__container .servicios__card .card__text h4, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description h3, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -66,7 +66,7 @@ html, body {
   line-height: 25px;
 }
 
-.seguros .seguros__container .seguros__text .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
+.promo-hogar .promo-hogar__container .promo-hogar__precio p, .offauto .offauto__container .offauto__precio p, .homeoffice .homeoffice__precio p, .seguros .seguros__container .seguros__text .seguros__cta, .seguros .seguros__container .seguros__text p, footer .footer__container .footer__contacto ul, footer .footer__container .footer__servicios ul, .contacto .contacto__container .contacto__right .contacto__right--text, .servicios .servicios__container .servicios__card .card__text h6, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio p, .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__cta {
   font-family: Geogrotesque Cyr;
   font-style: normal;
   font-weight: normal;
@@ -314,6 +314,9 @@ html, body {
   padding-top: 20%;
   padding-bottom: 10%;
 }
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--description h3 {
+  padding-top: 1vh;
+}
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail {
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -321,7 +324,7 @@ html, body {
   display: flex;
   position: absolute;
   top: 10vh;
-  right: 0vw;
+  right: 1vw;
   width: 3vw;
   min-width: 100px;
   justify-items: center;
@@ -335,11 +338,20 @@ html, body {
   display: flex;
   position: relative;
 }
+.carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio p {
+  color: #343434;
+  width: 90px;
+  text-align: left;
+  padding-left: 5px;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio .carousel__precio--img {
-  width: 100%;
+  width: 110%;
   display: none;
   position: relative;
-  transform: translateX(-70%);
+  transform: translateX(-90%);
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__image {
   z-index: 0;
@@ -694,6 +706,9 @@ footer .footer__container .footer__redes a img {
   }
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio h6 {
     text-align: center;
+    color: #F9F9F9;
+  }
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio p {
     color: #F9F9F9;
   }
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__precio .carousel__precio--img {
@@ -1182,11 +1197,20 @@ footer .footer__container .footer__redes a img {
   display: flex;
   position: relative;
 }
+.homeoffice .homeoffice__precio p {
+  color: #F9F9F9;
+  width: 90px;
+  text-align: left;
+  padding-left: 5px;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
 .homeoffice .homeoffice__precio .carousel__precio--img {
   width: 100%;
   display: flex;
   position: relative;
-  transform: translateX(-70%);
+  transform: translateX(-90%);
 }
 .homeoffice .tabla {
   z-index: 0;
@@ -1427,11 +1451,20 @@ footer .footer__container .footer__redes a img {
   display: flex;
   position: relative;
 }
+.offauto .offauto__container .offauto__precio p {
+  color: #F9F9F9;
+  width: 90px;
+  text-align: left;
+  padding-left: 5px;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
 .offauto .offauto__container .offauto__precio .carousel__precio--img {
   width: 100%;
   display: flex;
   position: relative;
-  transform: translateX(-70%);
+  transform: translateX(-90%);
 }
 .offauto .offauto__container .offauto__text {
   width: 100%;
@@ -1533,11 +1566,20 @@ footer .footer__container .footer__redes a img {
   display: flex;
   position: relative;
 }
+.promo-hogar .promo-hogar__container .promo-hogar__precio p {
+  color: #F9F9F9;
+  width: 90px;
+  text-align: left;
+  padding-left: 5px;
+  z-index: 1;
+  display: flex;
+  position: relative;
+}
 .promo-hogar .promo-hogar__container .promo-hogar__precio .carousel__precio--img {
   width: 100%;
   display: flex;
   position: relative;
-  transform: translateX(-70%);
+  transform: translateX(-90%);
 }
 .promo-hogar .promo-hogar__container .promo-hogar__text {
   width: 100%;
