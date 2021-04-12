@@ -1096,6 +1096,7 @@ footer .footer__container .footer__redes a img {
     top: 10vh;
   }
   .seguros .seguros__title {
+    width: 40%;
     font-size: 34px;
   }
   .seguros .seguros__container .seguros__text {
