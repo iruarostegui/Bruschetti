@@ -699,7 +699,7 @@ footer .footer__container .footer__redes a img {
 
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text {
     left: 2vw;
-    width: 30%;
+    width: 40%;
   }
   .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__text .carousel__text--detail {
     background-color: rgba(255, 255, 255, 0);
@@ -1362,7 +1362,7 @@ footer .footer__container .footer__redes a img {
     align-self: center;
   }
   .homeoffice .tabla {
-    top: 5vh;
+    top: 10vh;
   }
   .homeoffice .tabla .tabla__section {
     margin: 2em auto;
